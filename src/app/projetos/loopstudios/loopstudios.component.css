@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body h1, button {
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+}
+
+body p, li {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.disabled {
+    display: none;
+}
+
+/* HEADER */
+
+header {
+    background-image: url(/assets/loopstudios-img/desktop/image-hero.jpg);
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    
+}
+
+.navbaar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 12%;
+    align-items: center;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin-right: 16px;
+    list-style-type: none;
+    color: white;
+    cursor: pointer;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+li:hover {
+    border-bottom: 1px solid white;
+}
+
+.mob {
+    display: block;
+    width: fit-content;
+    font-size: 28px;
+    margin: 0 auto;
+    transition: all 400ms;
+}
+
+.title {
+    display: flex;
+} 
+
+.title h1 {
+    border: 2px solid white;
+    margin: 3% 12% 6% 12%;
+    color: white;
+    padding: 1% 4% 1% 1%;
+    font-size: 56px;
+}
+
+.burger {
+    display: none;
+    margin-right: 2%;
+}
+
+/* CORPO */
+
+.corpo {
+    margin: 6% 10%;
+    
+}
+
+.banner {
+    display: flex;
+    width: 100%;
+}
+
+.banner img {
+    height: 50%;
+    width: 100%;
+}
+
+.bloco {
+    background-color: white;
+    height: 50%;
+    padding: 8% 0 9% 4%;
+    margin-top: 16%;
+    margin-left: -14%;
+    
+}
+
+.bloco p {
+    font-size: 15px;
+}
+
+.creations {
+    margin-top: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 1% 4%;
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+.fotos {
+    margin: 8% auto;
+    width: 1040px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.fotos img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.fotos div {
+    margin: 0 6px 22px 6px ;
+}
+
+.fotos h1 {
+    margin-top: -92px;
+    margin-left: 18px;
+    color: white;
+    width: fit-content;
+}
+
+.fotos-mobile {
+    display: none;
+    margin-top: 8%;
+}
+
+.fotos-mobile img {
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.fotos-mobile h1 {
+    margin-top: -98px;
+    margin-left: 18px;
+    color: white;
+    width: fit-content;
+}
+
+.btn-mobile {
+    display: none;
+    margin: 16px auto;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    padding: 3% 10%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "log icon ";
+}
+
+footer img, nav, div, p, h5 {
+    margin: 1%;
+}
+
+footer p, h5 {
+    color: white;
+}
+
+footer .icons, p {
+    justify-self: flex-end;
+}
+
+.icons {
+    grid-area: icon;
+    display: flex;
+}
+
+.icons img {
+    margin-right: 6px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media(max-width:1294px) {
+    .fotos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+
+
+@media(max-width:972px) {
+    .banner {
+        flex-direction: column;
+    }
+    
+    .bloco {
+        margin: 0;
+    }
+
+    .fotos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media(min-width:700px) {
+    .mob {
+        display: none;
+    }
+}
+
+@media(max-width:700px) {
+    .navbaar nav {
+        display: none;
+    }
+
+    .fotos-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fotos {
+        display: none;
+    }
+
+    .btn-mobile {
+        display: block;
+    }
+
+    .creations button {
+        display: none;
+    }
+
+    .creations h1 {
+        margin: 0 auto;
+    }
+  
+    footer, footer nav ul {
+        display: block;
+    }
+
+    footer img, nav, div, p {
+        width: fit-content;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 8px;
+    }
+
+    footer nav ul li {
+        margin: 0 0 12px 0;
+    }
+
+    .title h1 {
+        margin: 56px auto 56px auto;
+    }
+
+    .navbaar {
+        padding: 30px 0 0 0;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .logo {
+        padding-left: 18px;
+    }
+
+    .burger {
+        display: block;
+        padding-right: 18px;
+    }
+
+}
+
+@media(max-width:400px) {
+    .title h1 {
+        font-size: 32px;
+    }
+}
+
+@media(max-width:252px) {
+
+    .logo, .logo2 {
+        width: 140px;
+    }
+
+    .burger {
+        margin-right: 4px;
+        padding: 0;
+    }
+
+}

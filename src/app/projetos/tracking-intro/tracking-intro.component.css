@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+body {
+    padding: 6%;
+}
+
+.containner {
+    display: flex;
+}
+
+/* HEADER */
+
+header {
+    justify-content: space-between;
+    margin-bottom: 32px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+li {
+    margin: 0 16px;
+    list-style: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+li:hover {
+    border-bottom: solid 2px black;
+}
+
+.burger{
+    display: none;
+}
+
+.menu-mobile {
+    margin: 0 auto;
+    width: fit-content;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.menu-mobile li {
+    margin: 5px;
+}
+
+.disabled {
+    display: none;
+}
+
+
+/* CORPO */
+
+
+.corpo {
+    justify-content: space-around;
+    font-family: 'Barlow', sans-serif;
+}
+
+.displays img {
+    width: 96%;
+}
+
+.conteudo {
+    margin-top: 6%;
+    font-weight: 500;
+}
+
+.new {
+    background-color: hsl(230, 29%, 20%);
+    color: white;
+    border-radius: 16px;
+    padding: 3px;
+    margin-right: 6px;
+}
+
+.sub {
+    color: hsl(231, 7%, 65%);
+}
+
+.conteudo h1 {
+    font-weight: bold;
+    font-size: 50px;
+    color: hsl(230, 29%, 20%);
+}
+
+.conteudo p {
+    margin: 18px 0;
+    color: hsl(230, 11%, 40%);
+}
+
+.demo {
+    align-items: center;
+    margin-top: 40px;
+}
+
+.button {
+    color: white;
+    background-color: hsl(0, 100%, 68%);
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-right: 8px;
+    font-weight:600;
+    cursor: pointer;
+}
+
+.txt {
+    color: hsl(231, 7%, 65%);
+    margin-left: 8px;
+    font-weight:500;
+}
+
+/* RESPONSIVIDADE */
+
+
+@media(min-width:865px) {
+    .menu-mobile {
+        display: none;
+    }
+}
+
+@media(max-width:865px) {
+    .corpo {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .conteudo h1 {
+        font-size: 26px;
+    }
+
+    .displays  {
+        width: 60%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
