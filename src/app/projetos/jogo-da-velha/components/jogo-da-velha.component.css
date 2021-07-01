@@ -51,11 +51,11 @@ ul li {
 }
 
 .kz-img-x {
-	background-image: url('/assets/jogo-img/x.png');
+	background-image: url('https://raw.githubusercontent.com/devlucasfreitas/portfolio/gh-pages/assets/jogo-img/x.png');
 }
 
 .kz-img-o {
-	background-image: url('/assets/jogo-img/o.png');
+	background-image: url('https://raw.githubusercontent.com/devlucasfreitas/portfolio/gh-pages/assets/jogo-img/o.png');
 }
 
 .kz-cor-vitoria {

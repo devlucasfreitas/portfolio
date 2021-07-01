@@ -27,7 +27,7 @@ body p, li {
 /* HEADER */
 
 header {
-    background-image: url(/assets/loopstudios-img/desktop/image-hero.jpg);
+    background-image: url(https://raw.githubusercontent.com/devlucasfreitas/portfolio/gh-pages/assets/loopstudios-img/desktop/image-hero.jpg);
     background-size: 100% 100% ;
     background-repeat: no-repeat;
     
